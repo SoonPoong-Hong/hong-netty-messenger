@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<project name="CmsCuc-opasnet backup" default="backup-src" basedir=".">
+
+    <target name="backup-src" depends="">
+        <echo> backup eclipse project src </echo>
+        <tstamp>
+            <format property="TODAY" pattern="yyyy-MM-dd_HH-mm" />
+        </tstamp>
+        <echo> time : ${TODAY} </echo>
+        <zip destfile="E:\backup\src\netty_msg_backup-${TODAY}.zip_" >
+          	<fileset dir=".">
+                <include name=".settings/**"/>
+          		<include name="**"/>
+                <include name=".*"/>
+                <include name="*.xml"/>
+                <include name="*.gradle"/>
+                <exclude name="target/**"/>
+                <exclude name="build/**"/>
+                <exclude name="reports/**"/>
+                <exclude name="bin/**"/>
+                <exclude name="**/*.class"/>
+                <exclude name="**/*.gif"/>
+                <exclude name="**/*.jpg"/>
+                <exclude name="**/*.zip"/>
+                <exclude name=".svn/**"/>
+                <exclude name="**/*.jar"/>
+                <exclude name="**/main/webapp/websquare/**"/>
+                <exclude name="**/authoData/**"/>
+                <exclude name="**/*.swf"/>
+                <exclude name="**/*.xlsx"/>
+                <exclude name="**/jQuery/"/>
+                <exclude name="test.*"/>
+           </fileset>
+    	</zip>
+
+
+    </target>
+
+
+
+
+</project>

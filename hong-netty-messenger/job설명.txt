@@ -1,0 +1,39 @@
+* 방퇴장
+	- param : 퇴장하려는 방명, LoginUser
+	1) 퇴장방 사람들에게 퇴장을 알림
+	2) 퇴장방에서 삭제
+	3) LoginUser의 roomName clear
+
+* 방입장
+	- param : 퇴장하려는 방명, 입장하려는 방명, LoginUserInfo
+	1) 퇴장방() call
+	2) 입장방에 추가
+	3) 입장방 사람들에게 입장을 알림
+	4) LoginUser의 roomName에 셋팅
+	
+* 로그아웃
+	- param : LoginUserInfo
+	1) 방퇴장() 호출 - LoginUserInfo에 있는 roomName에 대해서
+	2) channel close
+	
+* 로그인
+	- param : LoginUserInfo
+	1) 방입장() 호출 - 기본방에 대해서
+	
+* 메시지 톡 전송
+	- param : message, LoginUserInfo
+	1) LoginUserInfo가 속한 방에 메시지 전송	
+
+=============================================================
+프로토콜 예
+=
+EnterToRoom
+length:10
+=
+1234567890
+
+
+=============================================================
+
+내 google cloud ip
+104.199.164.22

@@ -1,0 +1,1 @@
+java -classpath ./netty-messenger-1.0.0-jar-with-dependencies.jar rocklike.netty.messenger.server.MsgServer 80

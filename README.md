@@ -2,7 +2,7 @@
 simple messenger written with netty.
 written by Hong SoonPoong (rocklike@gmail.com) 
 <br>
-netty 기반으로 만든 간단한 메신저 (server/client)
+netty 기반으로 만든 간단한 메신저 (server/client)<br>
 기능 <br>
 - 로그인
 - 로그아웃
